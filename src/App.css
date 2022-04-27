@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap');
+
+*{
+  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.App {
+  text-align: center;
+}
+
+.heading{
+  color: white;
+  background-color: #EF5350;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.alerta{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: rgb(255, 208, 0) ;
+  height: 100px;
+  justify-content: center;
+}
+
+.heading img{
+  height: 10rem;
+  display: inline-block; padding: 30px;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+}
+@media (max-width:550px) {
+  .heading img{
+    margin-top: 10px;
+    height: 6rem;
+  }
+}
+.titulo{
+  color: rgb(255, 208, 0);
+  font-weight: 800;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+}
+
+.btn{
+  background-color: rgb(255, 208, 0); /* Green */
+  border: none;
+  border-radius: 1rem;
+  color: #005C97;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.1s linear;
+  margin-bottom: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width:650px) {
+  .btn{
+    margin-top: 10px;
+  }
+}
+
+.btn:hover{
+  background-color: rgb(255, 166, 0);
+
+}
+
+input {
+  background: url(https://raw.githubusercontent.com/ThisIsDarky/Pokedex/master/img/pokeball.png) no-repeat 0px 14px;
+  background-size: 24px;
+  color: white;
+  font-size: 1.5em;
+  width: 500px;
+  border: transparent;
+  border-bottom: solid 1px #ccc;
+  padding: 10px 10px 10px 30px;
+  outline: none;
+}
+
+body {
+  background: #005C97;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/* DivTable.com */
+.divTable {
+  max-width: 20em;
+  justify-content: end;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color:#005C97;
+}
+.divTableRow {
+  display: table-row;
+}
+.divTableHeading {
+  background-color: #eee;
+  display: table-header-group;
+}
+.divTableCell,
+.divTableHead {
+  border: 2px solid #005C97;
+  display: table-cell;
+  padding: 3px 10px;
+  
+}
+
+.divTableBody {
+  display: table-row-group;
+}
+
+.divTableCell:nth-child(odd) {
+  color: white;
+  
+  background-color: #005C97;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.container h1{
+  color:#005C97;
+  text-transform: uppercase;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 1);
+}
+
+.container .card{
+  background-color: rgb(255, 208, 0);
+  width: 370px;
+  height: 660px;
+  border-radius:  8px;
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+
+.container .card:hover{
+  -webkit-box-shadow: 1px 2px 5px 6px rgba(0,0,0,0.4);
+  -moz-box-shadow: 1px 2px 5px 6px rgba(0,0,0,0.4);
+  box-shadow: 1px 2px 5px 6px rgba(0,0,0,0.4);
+}
+
+.container .card img{
+  width: 300px;
+  height: 300px;
+}
+
+.container .card p{
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+img {
+  height: 25em;
+}
+
