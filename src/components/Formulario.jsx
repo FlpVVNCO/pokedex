@@ -33,7 +33,7 @@ const Formulario = ({setPokemon, setPokemonTipo, setPokemonHabilidad}) => {
     const obtenerCategorias = async () => {
         const toArray = []
         try {
-            const url = `https://pokeapi.co/api/v2/pokemon/${busqueda}`
+            const url = `https://pokeapi.co/api/v2/pokemon/${busqueda.toLocaleLowerCase()}`
             const res = await axios(url)
             toArray.push(res.data);
             // setPokemonTipo(res.data.types[0].type.name);
