@@ -84,6 +84,12 @@ input {
   outline: none;
 }
 
+@media (max-width:560px) {
+  input{
+    width: 300px;
+  }
+}
+
 body {
   background: #005C97;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
@@ -117,11 +123,11 @@ body {
 
 .divTableBody {
   display: table-row-group;
+  margin: 0 auto;
 }
 
 .divTableCell:nth-child(odd) {
   color: white;
-  
   background-color: #005C97;
 }
 
